@@ -16,7 +16,7 @@ class StorageBlob:
         connectionString = os.environ["STORAGE_CONNECTION_STRING"]
         self.blob = BlobClient.from_connection_string(
             connectionString,
-            container_name="test01",
+            container_name="mycontainer",
             blob_name="pyTestBlob-" + id.hex + ".txt",
         )
 
